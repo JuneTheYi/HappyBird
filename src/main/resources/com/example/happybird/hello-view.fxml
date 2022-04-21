@@ -6,7 +6,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.happybird.HelloController">
    <center>
-      <ImageView fx:id="button" fitHeight="530.0" fitWidth="400.0" onMouseClicked="#userlogin" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      <ImageView fx:id="button" fitHeight="530.0" fitWidth="400.0" onMouseClicked="#userLogin" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
             <Image url="@../../../img/start.png" />
          </image>
