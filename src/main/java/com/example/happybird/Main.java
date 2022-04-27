@@ -10,14 +10,14 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    private static Stage stg;
+    private static Stage stg; // going to need this variable to change scenes
 
     @Override
     public void start(Stage stage) throws IOException {
         stg = stage;
-        stage.setResizable(false); // so our user can't maximize the window
+        stage.setResizable(false); // so  user can't maximize the window
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 400, 530);
         stage.setTitle("Happy (Flappy) Bird Game");
         stage.setScene(scene);
         stage.show();
@@ -29,7 +29,7 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 
 }
