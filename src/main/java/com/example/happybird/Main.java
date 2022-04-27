@@ -17,7 +17,9 @@ public class Main extends Application {
         stg = stage;
         stage.setResizable(false); // so  user can't maximize the window
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 400, 530);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 800);
+        scene.getRoot().requestFocus(); // required for KeyEvent on AfterLoginController.java pressed() function
+        // reloads the scene, otherwise the key won't load
         stage.setTitle("Happy (Flappy) Bird Game");
         stage.setScene(scene);
         stage.show();

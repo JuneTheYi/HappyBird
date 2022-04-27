@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.happybird.AfterLogin">
-   <center>
-      <ImageView fx:id="backpicture" fitHeight="517.0" fitWidth="905.0" onMouseClicked="#up" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="backpicture" fitHeight="800.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../img/back.png" />
          </image>
+         <viewport>
+            <Rectangle2D height="800.0" width="600.0" />
+         </viewport>
       </ImageView>
-   </center>
-</BorderPane>
+   </children>
+</AnchorPane>

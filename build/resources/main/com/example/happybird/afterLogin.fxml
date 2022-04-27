@@ -4,9 +4,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.happybird.AfterLogin">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.happybird.AfterLoginController">
    <center>
-      <ImageView fx:id="backpicture" fitHeight="517.0" fitWidth="905.0" onMouseClicked="#up" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      <ImageView fx:id="backpicture" fitHeight="517.0" fitWidth="905.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
             <Image url="@../../../img/back.png" />
          </image>

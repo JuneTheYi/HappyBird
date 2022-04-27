@@ -2,8 +2,10 @@ package com.example.happybird;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
@@ -14,7 +16,7 @@ public class HelloController {
     @FXML
     private Label welcomeText;
     @FXML
-    private ImageView button;
+    private ImageView FrontImage;
 
     @FXML
     protected void userLogin(ActionEvent event) throws IOException {

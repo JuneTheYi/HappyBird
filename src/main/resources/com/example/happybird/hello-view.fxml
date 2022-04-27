@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.happybird.HelloController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.happybird.HelloController">
    <center>
-      <ImageView fx:id="button" fitHeight="530.0" fitWidth="400.0" onMouseClicked="#userLogin" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-         <image>
-            <Image url="@../../../img/start.png" />
-         </image>
-      </ImageView>
+      <Button fx:id="button" mnemonicParsing="false" onAction="#userLogin" prefHeight="800.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <graphic>
+            <ImageView fx:id="FrontImage" fitHeight="800.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/start.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </center>
 </BorderPane>
