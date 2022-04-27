@@ -16,5 +16,10 @@
             <Rectangle2D height="800.0" width="600.0" />
          </viewport>
       </ImageView>
+      <ImageView id="bird" fx:id="bird" fitHeight="50.0" fitWidth="49.0" layoutX="276.0" layoutY="380.0" onKeyPressed="#pressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/bird.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
